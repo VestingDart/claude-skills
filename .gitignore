@@ -1,0 +1,4 @@
+# Von Claude Code automatisch heruntergeladene Skills (claude.ai-Sync).
+# Gehoeren nicht ins Repo: werden bei jeder Installation neu geholt und
+# wuerden bei Updates nur Konflikte erzeugen.
+synced/
