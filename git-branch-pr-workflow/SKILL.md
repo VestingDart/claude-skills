@@ -64,6 +64,31 @@ und in allen Repos des Nutzers hat diese Regel Vorrang.
 > (Das ältere `includeCoAuthoredBy: false` ist deprecated und erfasst den PR-Text nicht.)
 > Diese Skill-Regel ist die Absicherung, falls die Einstellung auf einem Gerät fehlt.
 
+## Phase 3: Nach dem Merge aufräumen
+
+Gemergte Branches werden **immer** gelöscht — lokal und auf dem Remote. Ein Repo voller
+abgearbeiteter Branches macht `git branch` unlesbar und man weiss nach zwei Wochen nicht mehr,
+was noch offen ist.
+
+Diese Phase läuft, sobald ein PR gemergt ist, und zusätzlich zu Beginn von Phase 1 als kurzer
+Aufräumblick.
+
+1. **Prüfen, ob wirklich gemergt.** `gh pr view <nummer> --json state,mergedAt` oder
+   `git branch --merged origin/main`. Nur was dort auftaucht, wird gelöscht.
+2. **Lokalen main nachziehen.** Ohne den Branch zu wechseln:
+   `git fetch origin main:main`
+3. **Lokal löschen.** `git branch -d <branch>` — mit kleinem `-d`. Das verweigert den Dienst,
+   wenn der Branch nicht vollständig gemergt ist, und genau das ist die Sicherung.
+   **Niemals `-D`**, ausser der Nutzer verlangt es ausdrücklich für einen verworfenen Branch.
+4. **Remote löschen.** `git push origin --delete <branch>`
+5. **Melden**, was gelöscht wurde, in einem Satz.
+
+Liegt man selbst noch auf dem zu löschenden Branch, vorher `git switch main`.
+
+Weigert sich `git branch -d`, ist der Branch **nicht** gemergt: nicht nachhelfen, sondern
+melden und fragen. Das ist der einzige Fall in diesem Workflow, in dem Arbeit verloren gehen
+kann.
+
 ## Wenn etwas nicht klappt
 
 - `gh` fehlt oder ist nicht eingeloggt: Push trotzdem erledigen und sagen, dass der PR manuell geöffnet werden muss (mit dem Link `https://github.com/<owner>/<repo>/pull/new/<branch>`), oder auf `gh auth login` hinweisen.
