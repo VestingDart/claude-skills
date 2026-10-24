@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: cli-tool-landing
+expected_outcome: |
+  Eine Landingpage für branchsweep in einer Datei, die nicht wie ein generisches SaaS-Template aussieht (kein lila Verlauf, kein Hero mit drei Icon-Karten), mit konkretem Text über das Tool und dem Install-Befehl.
