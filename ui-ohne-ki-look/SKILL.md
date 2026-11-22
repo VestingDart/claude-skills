@@ -47,7 +47,7 @@ Stufen, **eine** Akzentfarbe, Zustandsfarben) und erst dann die Komponente bauen
 | Chat mit Sprechblasen links/rechts | Gesprächsprotokoll: Zeilen mit Absender oder Stichwort am Rand |
 | Drei Feature-Karten mit Icon im farbigen Kreis | Text mit Struktur; Icons nur, wo sie etwas unterscheiden |
 | `animate-pulse`-Skelette, Hover-Hebeeffekte (`hover:scale`, `-translate-y`) | schlichtes «Laden…» oder Platzhalterzeile; Hover nur Farbwechsel |
-| Text und Überschriften mittig ausgerichtet, viel Leerraum | Text linksbündig, dichter, Informationen nebeneinander, wo Platz ist. Die Inhaltsspalte selbst steht mit fester Höchstbreite (`max-w-…` + `mx-auto`) mittig im freien Bereich, auch neben einer Seitenleiste |
+| Text und Überschriften mittig ausgerichtet, viel Leerraum | Text linksbündig, dichter, Informationen nebeneinander, wo Platz ist. Bei Dashboards und App-Ansichten nutzt der Inhalt die ganze freie Breite neben der Seitenleiste (nur Seitenrand, keine `max-w-…`), damit auf grossen Bildschirmen kein leerer Streifen bleibt. Fliesstext wie Doku oder Artikel darf schmaler sein |
 
 **Texte gehören dazu.** KI-Look entsteht auch über Wörter:
 
