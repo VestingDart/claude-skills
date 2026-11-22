@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: server-admin-dashboard
+expected_outcome: |
+  Ein Admin-Dashboard in einer HTML-Datei mit Beispieldaten, das dicht und lesbar ist und eine eigene Palette und Gewichtung hat statt Tailwind-Grau mit Indigo und gleich großen Karten.
