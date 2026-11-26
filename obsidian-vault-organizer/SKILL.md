@@ -47,15 +47,15 @@ Eine Rückfrage *vor* der Ausführung ist nur in diesen Fällen nötig:
 
 ## Vault finden
 
-Auf dem Linux-Rechner: `~/Desktop/Notizen/notizen/`. Vorher verifizieren, die Struktur wächst:
+Auf dem Linux-Rechner: `~/Desktop/Notizen/Notizen/`. Vorher verifizieren, die Struktur wächst:
 
 ```bash
 find ~ -maxdepth 4 -name ".obsidian" -type d 2>/dev/null
-ls ~/Desktop/Notizen/notizen/
+ls ~/Desktop/Notizen/Notizen/
 ```
 
-Achtung: es gibt zwei `.obsidian`-Ordner (`Notizen/` und `Notizen/notizen/`). Der echte Vault
-mit den Inhalten ist `Notizen/notizen/`. Die `Welcome.md` eine Ebene höher gehört nicht dazu.
+Achtung: es gibt zwei `.obsidian`-Ordner (`Notizen/` und `Notizen/Notizen/`). Der echte Vault
+mit den Inhalten ist `Notizen/Notizen/`. Die `Welcome.md` eine Ebene höher gehört nicht dazu.
 
 ---
 
@@ -75,7 +75,7 @@ Die aktuelle Struktur immer frisch auflisten, statt aus dieser Tabelle zu arbeit
 | Spiele | `Gaming/` | pro Spiel ein Unterordner, wenn mehr als eine Notiz |
 | Link-Sammlungen | `Links 🔗/` | nur noch themenfremde Sammlungen |
 | Aufgaben, Listen | `Tasks 📚/` | |
-| Weitere | `Fitness Traker/`, `Unreal Engine/` | |
+| Weitere | `Fitness Tracker/`, `Unreal Engine/` | |
 
 **Zwei Regeln, die er selbst so entschieden hat:**
 

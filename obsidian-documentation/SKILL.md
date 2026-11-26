@@ -51,7 +51,7 @@ im Vault anlegen.
 
 ## Wo ablegen
 
-Vault auf dem Linux-Rechner: `~/Desktop/Notizen/notizen/`. Den Pfad vorher verifizieren
+Vault auf dem Linux-Rechner: `~/Desktop/Notizen/Notizen/`. Den Pfad vorher verifizieren
 (`ls`), auf anderen Geräten kann er abweichen — dann im Home nach einem Ordner mit
 `.obsidian` suchen.
 
